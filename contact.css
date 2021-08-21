@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wholepage{
+    background-color: rgb(54, 4, 54);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.circle1{
+    position: absolute;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    background-color: red;
+    right: 0%;
+    top:0%;
+    z-index: 1;
+}
+.circle2{
+    position: absolute;
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    background-color: red;
+    left: 0%;
+    bottom:0%;
+}
+.circle3{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color:red;
+    right: 3%;
+   top: 35%;
+}
+.circle4{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    right: 25%;
+    bottom:5%;
+}
+.circle5{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    left: 40%;
+    top:5%
+}
+.circle6{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    left: 30%;
+    bottom:1%;
+}
+.top{
+   
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0em 4em;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(78, 21, 78)
+}
+.logo{
+   
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    flex:2;
+    opacity: 0.8;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    flex: 1.25;
+}
+nav ul{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+button{
+    background-color: rgb(78, 21, 78);
+        border: none;
+        border-radius: 30px;
+        padding: 0.7em 1em;
+        color:rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        font-size: 18px;
+        box-sizing: border-box;
+        border: 1px rgb(70, 12, 70);
+        
+    }
+    .button_border{
+        border: 1px solid white;
+        
+    }
+
+    .button_border:hover{
+        border: 1px solid red;
+        
+    }
+button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+     
+}
+
+.contactme{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(128, 9, 9, 0.01));
+    width: 90%;
+    height: 80vh;
+    top: 5vh;
+    position: absolute;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    
+}
+.left{
+    flex: 1;
+    height: 100%;
+    background-color: rgba(247, 1, 1,0.9);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+    height: 100%;
+}
+.texts{
+    color: white;
+    padding: vh;
+    height: 15vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.2),rgba(128, 9, 9, 0.09));
+    padding: 3vh 7vh;
+    width: 80%;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 90%;
+    border-radius: 20px;
+    color: white;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    
+}
+.input-group{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px 20px;
+    outline: 0;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.2),rgba(128, 9, 9, 0.09));
+   border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    transition: 0.2s;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 15px;
+    
+}
+.fas{
+    margin-right: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+.submit-button{
+   margin-top: -3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* -----------------left part-------------------- */
+.xray{
+    -webkit-clip-path: polygon(0 87%, 100% 11%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 87%, 100% 11%, 100% 100%, 0% 100%);
+    background-color: rgb(75, 18, 75);
+    height: 100%;
+    width: 100%;
+}
+.left{
+    position: relative;
+    overflow: hidden;
+}
+
+.yray{
+    -webkit-clip-path: inset(0 73% 60% 10% );
+    clip-path: inset(0 73% 60% 10% );
+    background-color:white;
+    
+    position: absolute;
+    top: -2%;
+     height: 100%;
+    width: 100%;
+}
+.contacttext{
+transform: rotate(-90deg);
+color:rgb(133, 23, 133);
+position: absolute;
+left: -1.8%;
+top: 15%;
+z-index: 2;
+font-weight: 100;
+}
+
+.social_icons{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 0.5em;
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    z-index: 2;
+    color: white;
+}
+.fa-facebook:hover{
+    color: rgb(115, 115, 219);
+}
+.fa-instagram:hover{
+    color:rgb(243, 4, 44);
+}
+.fa-youtube:hover{
+    color:rgb(233, 34, 34);
+}
+.fa-github:hover{
+    color:teal;
+}
+.fa-twitter:hover{
+    color: rgb(31, 150, 197)
+}
+.findme{
+    position: absolute;
+    color: white;
+    left: 13%;
+    font-weight: 100;
+    bottom: 12%;
+    font-size: 25px;
+    z-index: 2;
+}
+
+i{
+    padding-right: 0.6em;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+.fa-paper-plane{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1024px) {
+
+    .xray, .yray , .contacttext , .social_icons , .findme{
+        display: none;
+    }
+    .input-group{
+        margin-bottom: 30px;
+    }
+    input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    font-size: 13px;
+    
+}
+.submit-button{
+   margin-top: 0;
+ }
+.contactme{
+    margin-top: 10vh;
+
+}
+    form{
+        margin-top: -2vh;
+      
+    }
+    .form{
+       height: 100%;
+       width: 100%;
+       padding-top: 10vh;
+    }
+
+    .left{
+        display: none;
+    }
+    .logo{
+        font-size:35px;
+    }
+    .wholepage{
+        position: relative;
+        overflow: hidden;
+    }
+    .circle1{
+        /* position: absolute;
+        height: 200px;
+        border-radius: 50%;
+        width: 200px;
+        background-color: red;
+        z-index: 2;
+        right: -20%;
+        top:-10%; */
+        display: none;
+    }
+    .circle2{
+        position: absolute;
+        height: 150px;
+        border-radius: 50%;
+        width: 150px;
+        background-color: red;
+        z-index: 2;
+        left: -10%;
+        bottom:-5%;
+    }
+    .circle3{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color:red;
+        z-index: 4;
+        right: -6%;
+       top: 35%;
+    }
+    .circle4{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        z-index: 4;
+        right: 10%;
+        bottom:5%;
+    }
+    .circle5{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        z-index: 4;
+        left: 20%;
+        top:-5%
+    }
+    .circle6{
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+        z-index: 4;
+        left: 30%;
+        bottom:1%;
+    }
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(128, 9, 9, 0.1));
+        backdrop-filter: blur(20px);
+        top:0%;  
+        height:100%;
+        left: 0%;
+        width: 100%;
+        border-radius: 20px;
+        /* display: none; */
+        clip-path: inset(100%);
+        -webkit-clip-path:inset(100%);
+        transition: all .5s ease-out;
+        pointer-events: none;
+        z-index: 3;
+        padding-top: 95px;
+        z-index: 5;
+    }
+    button{
+        
+        margin-bottom: 30px;
+
+        border: none;
+    }
+    .button_border{
+        background-color: rgb(78, 21, 78);
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .hamburger{
+        position:absolute;
+        z-index: 3;
+        cursor: pointer;
+        right: 5%;
+        top: 30%;
+        transform: translate(-5% -30%);
+    }
+   
+    nav ul.open{
+        clip-path: inset(25% 15% 15% 15% round 5%);
+        -webkit-clip-path:inset(25% 15% 15% 15% round 5%);
+        transition: all .5s ease-out;
+        pointer-events: all;
+        z-index: 5;
+    }
+}

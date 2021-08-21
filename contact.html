@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Amrit</title>
+    <link rel="stylesheet" href="contact.css">
+   <script src="https://kit.fontawesome.com/ecae263898.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wholepage">
+    <div class="circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+    </div>
+   
+        <div class="top">
+            <header>
+                    <div class="logo"> <a href="index.html">Portfolio</a> </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><button>Home</button></a></li>
+                        <li><a href="about.html"><button >About</button></a></li>
+                        <li><a href="blog.html"><button >Blog</button></a></li>
+                        <li><a href="contact.html"><button class="button_border">Contact</button></a></li>
+
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </header>
+        </div>
+
+        <div class="contactme">
+            <h1 class="contacttext">Contact Me</h1>
+            <h1 class="findme">Find Me on</h1>
+            <div class="social_icons">
+                <a href="https://www.facebook.com/bloddyhell.ak47felix"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/felix_newray/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCPjHMmlHJ0unN_MQuKMFpew"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/newrayhub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/NewrayAmrit"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="left">
+                <div class="xray">
+               
+                </div>
+                <div class="yray">
+                 
+                </div>
+            </div>
+            <div class="right">
+                <div class="form">
+                    <div class="texts"> <h1>Get in touch</h1>
+                     <p>let's connect with each other. </p>
+                 </div>
+                    <form action="contact.php" method="POST">
+                       <div class="row"><div class="input-group">
+                            <input type="text" required id="name" name="name">
+                            <label for="name"><i class="fas fa-user"></i>Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" required id="number" name="number">
+                            <label for="number"><i class="fas fa-phone-square"></i>Phone</label>
+                        </div>
+                    </div> 
+                        <div class="input-group">
+                            <input type="email" required id="email" name="email">
+                            <label for="email"><i class="fas fa-envelope"></i>Email</label>
+                        </div>
+                    
+                        <div class="input-group">
+                           <textarea id="message" rows="5" required name="message"></textarea>
+                            <label for="message"><i class="fas fa-comments"></i>Your Message</label>
+                        </div>
+                        <div class="submit-button">
+                        <button type="submit">Submit<i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    </form>
+                </div>
+
+                </div>
+                <div class="myinfo">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="contact.js"></script>
+</html>
